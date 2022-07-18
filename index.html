@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+        <script src="wscript.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <center><h1>Weight Converter</h1></center>
+        <input type="number" id="amnt">
+        <select id="convertfrom">
+            <!-- The value is expresses the unit (1) in grams -->
+            <option value="" disabled selected>Choose the metric you want to convert from.</option>
+            <option value="1000000000000000">gigatonne (Gt)</option>
+            <option value="1000000000000">megatonne (Mt)</option>
+            <option value="1000000">tonne (t)</option>
+            <option value="1000">kilogram (kg)</option>
+            <option value="1">gram (g)</option>
+            <option value="0.001">miligram (mg)</option>
+            <option value="0.000001">microgram (µg)</option>
+            <option value="0.000000001">nanogram (ng)</option>
+            <option value="0.000000000001">picogram (pg)</option>
+            <option value="453.59">lb (pound)</option>
+            <option value="28.35">oz (ounce)</option>
+        </select>
+        <select id="convertto">
+            <option value="" disabled selected>Choose the metric you want to convert from.</option>
+            <option value="1000000000000000">gigatonne (Gt)</option>
+            <option value="1000000000000">megatonne (Mt)</option>
+            <option value="1000000">tonne (t)</option>
+            <option value="1000">kilogram (kg)</option>
+            <option value="1">gram (g)</option>
+            <option value="0.001">miligram (mg)</option>
+            <option value="0.000001">microgram (µg)</option>
+            <option value="0.000000001">nanogram (ng)</option>
+            <option value="0.000000000001">picogram (pg)</option>
+            <option value="453.59">lb (pound)</option>
+            <option value="28.35">oz (ounce)</option>
+        </select>
+        <button onclick="convert(document.getElementById('convertfrom').value, document.getElementById('convertto').value)">Convert</button>
+        <strong id="ans">Converted Amount:</strong>
+    </body>
+</html>

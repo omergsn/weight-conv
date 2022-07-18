@@ -1,0 +1,16 @@
+*{
+    background-color: rgb(44, 48, 53);
+    color:brown;
+    border-color: brown;
+    border-width: 5px;
+    font-size: larger;
+    margin:10px;
+}
+h1{
+    font-size: 42px;
+    margin-bottom:80px;
+    padding:10px;
+    border-bottom: 5px solid transparent;
+    border-image: linear-gradient(to bottom right, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);
+    border-image-slice: 1;
+}
